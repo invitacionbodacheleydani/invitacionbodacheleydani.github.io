@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Celeste &amp; Daniel · 24.10.2026</title>
+<script>
+  // Si escriben mal el final (mayusculas, sin barra, etc.) los manda a la invitacion que corresponde
+  var p = location.pathname.toLowerCase();
+  location.replace(p.indexOf('fiesta') !== -1 ? '/fiesta/' : '/principal/' + location.hash);
+</script>
+<style>body{margin:0;background:#28344E;color:#e9e4da;font:16px Georgia,serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}a{color:#e2cfaa}</style>
+</head>
+<body><p><a href="/principal/">Abrir la invitación</a></p></body>
+</html>
